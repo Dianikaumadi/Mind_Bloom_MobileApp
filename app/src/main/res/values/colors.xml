@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mb_primary">#A78BFA</color>      <!-- lavender -->
+    <color name="mb_secondary">#F8C8DC</color>    <!-- soft pink -->
+    <color name="mb_accent">#9BD4F5</color>       <!-- soft blue -->
+    <color name="mb_bg">#F8F6FF</color>
+    <color name="mb_text">#2D1B4E</color>
+    <color name="mb_text_muted">#6B6B8E</color>
+
+    <color name="colorPrimary">#A593E0</color>
+    <color name="colorPrimaryDark">#8A7AC7</color>
+    <color name="bg">#F5F2FF</color>
+
+    <!-- 30% Secondary (soft blue) -->
+    <color name="colorSecondary">#6FB1F1</color>
+    <color name="secondaryLight">#BEE1FF</color>
+
+    <!-- 10% Accent (soft pink) -->
+    <color name="accent">#F7A8B8</color>
+
+    <color name="textPrimary">#1E1E1E</color>
+    <color name="textSecondary">#5D5D6A</color>
+    <color name="card">#FFFFFF</color>
+    <color name="divider">#E8E8F3</color>
+
+    <color name="bg_top">#D9B8FF</color>    <!-- Lavender -->
+    <color name="bg_bottom">#002B50</color> <!-- Deep Navy Blue -->
+
+</resources>
