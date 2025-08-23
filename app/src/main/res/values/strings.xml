@@ -24,6 +24,7 @@
     <string name="login">LOGIN</string>
     <string name="Sign">SIGN UP</string>
     <string name="google">Continue with google </string>
+    <string name="Logintext">Enter Your Calm Space</string>
 
 
 </resources>
