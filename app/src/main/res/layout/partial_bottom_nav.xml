@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomBar"
+    android:layout_width="0dp"
+    android:layout_height="64dp"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#CC0D1A2B"
+    app:cardElevation="4dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="horizontal"
+android:weightSum="5"
+android:paddingHorizontal="6dp">
+
+<!-- HOME (selected by default) -->
+<LinearLayout
+    android:id="@+id/navHome"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:onClick="navHome"
+    android:paddingVertical="6dp"
+    android:selected="true">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_home"
+        android:tint="@color/nav_item_tint"
+        android:contentDescription="Home"
+        android:duplicateParentState="true"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="11sp"
+        android:textColor="@color/nav_item_text"
+        android:duplicateParentState="true"/>
+</LinearLayout>
+
+<!-- SLEEP (moon) -->
+<LinearLayout
+    android:id="@+id/navSleep"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:onClick="navSleep"
+    android:paddingVertical="6dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_sleep_moon"
+        android:tint="@color/nav_item_tint"
+        android:contentDescription="Sleep"
+        android:duplicateParentState="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep"
+        android:textSize="11sp"
+        android:textColor="@color/nav_item_text"
+        android:duplicateParentState="true"/>
+</LinearLayout>
+
+<!-- DISCOVER (search) -->
+<LinearLayout
+    android:id="@+id/navDiscover"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:onClick="navDiscover"
+    android:paddingVertical="6dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_discover_search"
+        android:tint="@color/nav_item_tint"
+        android:contentDescription="Discover"
+        android:duplicateParentState="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:textSize="11sp"
+        android:textColor="@color/nav_item_text"
+        android:duplicateParentState="true"/>
+</LinearLayout>
+
+<!-- PROFILE -->
+<LinearLayout
+    android:id="@+id/navProfile"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:onClick="navProfile"
+    android:paddingVertical="6dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_profile"
+        android:tint="@color/nav_item_tint"
+        android:contentDescription="Profile"
+        android:duplicateParentState="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="11sp"
+        android:textColor="@color/nav_item_text"
+        android:duplicateParentState="true"/>
+</LinearLayout>
+
+<!-- PREMIUM -->
+<LinearLayout
+    android:id="@+id/navPremium"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:onClick="navPremium"
+    android:paddingVertical="6dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_premium_star"
+        android:tint="@color/nav_item_tint"
+        android:contentDescription="Premium"
+        android:duplicateParentState="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium"
+        android:textSize="11sp"
+        android:textColor="@color/nav_item_text"
+        android:duplicateParentState="true"/>
+</LinearLayout>
+
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>

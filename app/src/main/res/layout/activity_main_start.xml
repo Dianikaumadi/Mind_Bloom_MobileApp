@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relaxRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".MainStart">
+
+    <!-- Heading -->
+    <LinearLayout
+        android:id="@+id/headerRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvLead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/relax_lead_text"
+            android:textColor="@color/onPrimaryBg"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvRelax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/relax_highlight_text"
+            android:textColor="@color/accent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingStart="6dp"/>
+    </LinearLayout>
+
+    <!-- Scrollable options -->
+    <ScrollView
+        android:id="@+id/scrollArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/headerRow"
+        app:layout_constraintBottom_toTopOf="@id/btnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:id="@+id/optionsColumn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRelaxation"
+                style="@style/Relax.OptionButton"
+                android:text="🧘  Relaxation"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSleep"
+                style="@style/Relax.OptionButton"
+                android:text="🌙  Sleep better"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFocus"
+                style="@style/Relax.OptionButton"
+                android:text="🎯  Focus"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnxiety"
+                style="@style/Relax.OptionButton"
+                android:text="🫧  Reduce anxiety"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnJournal"
+                style="@style/Relax.OptionButton"
+                android:text="📓  Reflect and journal"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPerformance"
+                style="@style/Relax.OptionButton"
+                android:text="🔎  Improve performance"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Start button pinned at bottom -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:text="@string/relax_start"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/onPrimary"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/primary"
+        app:rippleColor="@color/accentRipple"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

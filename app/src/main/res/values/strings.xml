@@ -26,7 +26,13 @@
     <string name="google">Continue with google </string>
     <string name="Logintext">Enter Your Calm Space</string>
     <string name="Signuptext">Let Today Be the Start of Something Calm</string>
+    <string name="Mood">Hi Julia</string>
+    <string name="Moodtxt1"> Ready to Relax and Recharge?</string>
+    <string name="Moodtxt2"> How do you feel right now?</string>
 
 
+    <string name="relax_lead_text">What brings you to</string>
+    <string name="relax_highlight_text">Relax?</string>
+    <string name="relax_start">Start</string>
 
 </resources>

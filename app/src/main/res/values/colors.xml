@@ -26,4 +26,20 @@
     <color name="bg_top">#D9B8FF</color>    <!-- Lavender -->
     <color name="bg_bottom">#002B50</color> <!-- Deep Navy Blue -->
 
+
+    <color name="primaryBg">#C8D2FF</color>       <!-- soft lavender-blue -->
+    <color name="onPrimaryBg">#FFFFFF</color>
+
+    <color name="primary">#6E8EF5</color>        <!-- strong blue -->
+    <color name="onPrimary">#FFFFFF</color>
+
+    <!-- Secondary 30% (option buttons) -->
+    <color name="secondary">#5C79E6</color>
+    <color name="onSecondary">#FFFFFF</color>
+
+    <!-- Accent 10% (highlights/ripple) -->
+
+    <color name="accentRipple">#33FFD93D</color> <!-- 20% alpha -->
+
+
 </resources>
