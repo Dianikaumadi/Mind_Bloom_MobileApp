@@ -7,27 +7,26 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MoodCheck : AppCompatActivity() {
 
-    companion object {
-        const val EXTRA_MOOD = "extra_mood"
-    }
+    companion object { const val EXTRA_MOOD = "extra_mood" }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mood_check)
+        setContentView(R.layout.activity_mood_check) // <-- uses the XML above
 
-        // Set up listeners for each mood option
-        findViewById<View>(R.id.moodHappy).setOnClickListener   { navigateToMainStart("Happy") }
-        findViewById<View>(R.id.moodLoved).setOnClickListener   { navigateToMainStart("Loved") }
-        findViewById<View>(R.id.moodSad).setOnClickListener     { navigateToMainStart("Sad") }
-        findViewById<View>(R.id.moodAngry).setOnClickListener   { navigateToMainStart("Angry") }
-        findViewById<View>(R.id.moodTired).setOnClickListener   { navigateToMainStart("Tired") }
-        findViewById<View>(R.id.moodStressed).setOnClickListener{ navigateToMainStart("Stressed") }
+        setClick(R.id.moodHappy,    "Happy")
+        setClick(R.id.moodLoved,    "Loved")
+        setClick(R.id.moodSad,      "Sad")
+        setClick(R.id.moodAngry,    "Angry")
+        setClick(R.id.moodTired,    "Tired")
+        setClick(R.id.moodStressed, "Stressed")
     }
 
-    private fun navigateToMainStart(mood: String) {
-        val intent = Intent(this, MainStart::class.java).apply {
-            putExtra(EXTRA_MOOD, mood)
+    private fun setClick(viewId: Int, mood: String) {
+        findViewById<View>(viewId).setOnClickListener {
+            val i = Intent(this, MainStart::class.java).apply {
+                putExtra(EXTRA_MOOD, mood)
+            }
+            startActivity(i)
         }
-        startActivity(intent)
     }
 }

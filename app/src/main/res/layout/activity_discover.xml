@@ -244,4 +244,13 @@ android:layout_marginTop="12dp"/>
         tools:layout_editor_absoluteY="383dp"
         tools:ignore="MissingConstraints" />
 
+    <include
+        android:id="@+id/bottomBarInclude"
+        layout="@layout/partial_bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

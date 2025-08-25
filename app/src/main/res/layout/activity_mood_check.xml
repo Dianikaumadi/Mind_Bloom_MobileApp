@@ -2,277 +2,253 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/ss"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoodCheck">
+    android:background="@drawable/bg_splash">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:background="@drawable/bg_splash"
+    <TextView
+        android:id="@+id/titleMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Mood"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Moodtxt1"
+        app:layout_constraintStart_toStartOf="@+id/titleMood"
+        app:layout_constraintTop_toBottomOf="@+id/titleMood" />
+
+    <TextView
+        android:id="@+id/sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Moodtxt2"
+        app:layout_constraintStart_toStartOf="@id/sub1"
+        app:layout_constraintTop_toBottomOf="@id/sub1" />
+
+    <!-- Mood grid -->
+    <GridLayout
+        android:id="@+id/gridMoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:useDefaultMargins="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub2">
+
+        <!-- Happy -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodHappy"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:id="@+id/Happy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="😊"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Happy"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Loved -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodLoved"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="😍"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Loved"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Sad -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodSad"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="😢"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Sad"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Angry -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodAngry"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="😡"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Angry"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Tired -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodTired"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="🥱"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tired"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Stressed -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/moodStressed"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/moodcard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="😖"
+                    android:textSize="32sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Stressed"
+                android:textColor="#E6FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/sss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="161dp"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Mood"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.247"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.104" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="82dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="68dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.539"
-            app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/sakura" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="258dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="28dp"
-            android:text="@string/Moodtxt1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.431"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:text="@string/Moodtxt2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.43"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-        <!-- Mood grid -->
-        <GridLayout
-            android:id="@+id/gridMoods"
-            android:layout_width="190dp"
-            android:layout_height="356dp"
-            android:layout_marginTop="60dp"
-            android:columnCount="2"
-            android:rowCount="2"
-            android:useDefaultMargins="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView9"
-            tools:ignore="UnknownId">
-
-            <!-- 1) Happy -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodHappy"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="😊"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Happy"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <!-- 2) Loved -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodLoved"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="😍"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Loved"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <!-- 3) Sad -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodSad"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="😢"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Sad"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <!-- 4) Angry -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodAngry"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="😡"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Angry"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <!-- 5) Tired -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodTired"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="🥱"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Tired"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-            <!-- 6) Stressed -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/moodStressed"
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:background="@drawable/moodcard">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="😖"
-                        android:textSize="32sp" />
-                </FrameLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="Stressed"
-                    android:textColor="#E6FFFFFF"
-                    android:textSize="13sp" />
-            </LinearLayout>
-
-        </GridLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/gridMoods" />
 </androidx.constraintlayout.widget.ConstraintLayout>
