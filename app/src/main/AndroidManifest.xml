@@ -12,6 +12,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MindBloomApp">
         <activity
+            android:name=".Themes"
+            android:exported="false" />
+        <activity
+            android:name=".coloring"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".SoothingArt"
+            android:exported="false" />
+        <activity
+            android:name=".Journals"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".BreathingExercises"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Plan"
+            android:exported="false" />
+        <activity
+            android:name=".PremiumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Discover"
+            android:exported="false" />
+        <activity
+            android:name=".Sleep"
+            android:exported="false" />
+        <activity
             android:name=".Home"
             android:exported="false" />
         <activity

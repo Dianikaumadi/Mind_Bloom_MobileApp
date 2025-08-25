@@ -132,7 +132,7 @@
                     android:layout_height="45dp" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btnsignup"
                     android:layout_width="228dp"
                     android:layout_height="wrap_content"
                     android:text="Button" />

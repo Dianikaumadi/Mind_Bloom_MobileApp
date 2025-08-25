@@ -1,14 +1,17 @@
 package com.example.mindbloomapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class onboard_1 : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,13 +22,14 @@ class onboard_1 : AppCompatActivity() {
             insets
         }
 
-        val btnNext = findViewById<Button>(R.id.btnnext2) // your Next button id
+        val btnNext = findViewById<Button>(R.id.btnnext2)
         btnNext.setOnClickListener {
             // Navigate to Onboard2 (replace with your actual target activity)
             val intent = Intent(this, Onboard_2::class.java)
             startActivity(intent)
             finish() // optional, prevents going back to Onboard1
         }
+
 
 
     }

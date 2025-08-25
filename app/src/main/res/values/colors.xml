@@ -41,5 +41,79 @@
 
     <color name="accentRipple">#33FFD93D</color> <!-- 20% alpha -->
 
+    <color name="card_top">#3A546E</color>
+    <color name="card_bottom">#223A55</color>
+
+    <!-- 60-30-10 palette -->
+    <!-- 60%: background gradient -->
+    <color name="primary_bg_top">#8FB3D9</color>
+    <color name="primary_bg_bottom">#0E2744</color>
+
+    <!-- 10%: accents / chips -->
+    <color name="accent_chip_bg">#E6FFFFFF</color>  <!-- translucent white -->
+    <color name="chip_text">#2B3A4D</color>
+
+    <!-- Text helpers -->
+    <color name="text_secondary">#B3FFFFFF</color>  <!-- 70% white -->
+
+    <!-- Bottom nav -->
+    <color name="nav_active">#FFFFFFFF</color>
+    <color name="nav_inactive">#B3FFFFFF</color>
+
+    <!-- Subtle accent and button colors for the Premium page -->
+    <color name="premiumAccent">#A8B4FF</color>
+    <color name="premiumText">#E6FFFFFF</color>
+    <color name="premiumButtonBg">#F1E6FF</color>
+    <color name="premiumButtonText">#1D1B33</color>
+
+    <color name="planCardBg">#1D2A47</color>         <!-- deep slate blue -->
+    <color name="planText">#E6FFFFFF</color>        <!-- 90% white -->
+    <color name="planButtonBg">#324768</color>      <!-- pill bg -->
+    <color name="planButtonText">#E6FFFFFF</color>  <!-- pill text -->
+    <color name="planBadgeBg">#B3FFFFFF</color>     <!-- badge bg (70% white) -->
+    <color name="planBadgeText">#1D1B33</color>     <!-- badge text -->
+
+    <!-- Text Colors -->
+    <color name="textColor">#FFFFFF</color> <!-- white -->
+    <color name="secondaryTextColor">#B3FFFFFF</color> <!-- light grey -->
+
+    <!-- Background and UI Colors -->
+    <color name="backgroundColor">#1D2A47</color> <!-- deep slate blue -->
+    <color name="accentColor">#A8B4FF</color> <!-- accent color -->
+    <color name="primaryColor">#335EA8</color> <!-- main button color -->
+    <color name="secondaryBtn">#1A3E6F</color> <!-- button background -->
+
+    <!-- Profile-specific, minimal -->
+    <color name="profileChipBg">#F2F4F8</color>          <!-- light pill/card bg -->
+    <color name="profileTextSecondary">#E6FFFFFF</color> <!-- 90% white -->
+    <color name="profileDivider">#33FFFFFF</color>       <!-- thin divider -->
+    <color name="profileProgress">#6E7BEA</color>        <!-- progress bar -->
+    <color name="profileProgressTrack">#66FFFFFF</color> <!-- track tint -->
+
+    <!-- Breathing page colors (minimal) -->
+    <color name="breathePrimary">#6E7BEA</color>
+    <color name="breatheOnPrimary">#FFFFFFFF</color>
+    <color name="breatheButtonTonal">#E6ECFF</color>   <!-- light tint -->
+    <color name="breatheChipBg">#F0F2FF</color>
+    <color name="breatheChipText">#1D1B33</color>
+    <color name="breatheTextSecondary">#E6FFFFFF</color>
+    <color name="breatheDivider">#33FFFFFF</color>
+
+    <!-- Payment screen palette -->
+    <color name="paymentCardBg">#243B74</color>
+    <color name="paymentTileBg">#1C2D55</color>
+    <color name="paymentFieldBg">#23406B</color>
+    <color name="paymentTextDim">#B3FFFFFF</color>
+
+    <color name="paymentButtonBg">#3D7BFF</color>
+    <color name="paymentButtonText">#FFFFFFFF</color>
+
+    <color name="successIcon">#1BCB79</color>
+    <color name="successIconDark">#11A864</color>
+
+
+
+
+
 
 </resources>

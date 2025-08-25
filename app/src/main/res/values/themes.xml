@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.MindBloomApp" parent="Base.Theme.MindBloomApp" />
+
+        <style name="Theme.MindBloom" parent="Theme.Material3.DayNight.NoActionBar"/>
+
 </resources>
