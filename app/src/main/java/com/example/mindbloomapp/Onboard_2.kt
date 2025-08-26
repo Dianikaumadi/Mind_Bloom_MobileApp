@@ -21,12 +21,12 @@ class Onboard_2 : AppCompatActivity() {
             insets
         }
 
-        val btnNext2 = findViewById<Button>(R.id.btnnext2) // your Next button id
+        val btnNext2 = findViewById<Button>(R.id.btnnext2)
         btnNext2.setOnClickListener {
-            // Navigate to Onboard2 (replace with your actual target activity)
+
             val intent = Intent(this, StartPage::class.java)
             startActivity(intent)
-            finish() // optional, prevents going back to Onboard1
+            finish()
         }
 
 

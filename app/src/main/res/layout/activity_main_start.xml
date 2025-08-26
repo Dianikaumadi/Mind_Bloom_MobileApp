@@ -10,18 +10,22 @@
     tools:context=".MainStart">
 
     <!-- Heading -->
+
+    <!-- Options column (non-scroll) -->
     <LinearLayout
         android:id="@+id/headerRow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="44dp"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:paddingStart="24dp"
-        android:paddingEnd="24dp"
         android:paddingTop="24dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvLead"
@@ -30,86 +34,79 @@
             android:text="@string/relax_lead_text"
             android:textColor="@color/onPrimaryBg"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvRelax"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="6dp"
             android:text="@string/relax_highlight_text"
             android:textColor="@color/accent"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:paddingStart="6dp"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Scrollable options -->
-    <ScrollView
-        android:id="@+id/scrollArea"
+    <LinearLayout
+        android:id="@+id/optionsColumn"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/headerRow"
-        app:layout_constraintBottom_toTopOf="@id/btnStartfinal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp">
+        app:layout_constraintTop_toBottomOf="@id/headerRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
-            android:id="@+id/optionsColumn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRelaxation"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_relaxation"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnRelaxation"
-                style="@style/Relax.OptionButton"
-                android:text="🧘  Relaxation"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSleep"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_sleep_better"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSleep"
-                style="@style/Relax.OptionButton"
-                android:text="🌙  Sleep better"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFocus"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_focus"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnFocus"
-                style="@style/Relax.OptionButton"
-                android:text="🎯  Focus"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAnxiety"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_reduce_anxiety"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAnxiety"
-                style="@style/Relax.OptionButton"
-                android:text="🫧  Reduce anxiety"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJournal"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_reflect_journal"/>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnJournal"
-                style="@style/Relax.OptionButton"
-                android:text="📓  Reflect and journal"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPerformance"
+            style="@style/Relax.OptionButton"
+            android:text="@string/relax_option_improve_performance"/>
+    </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnPerformance"
-                style="@style/Relax.OptionButton"
-                android:text="🔎  Improve performance"/>
-
-        </LinearLayout>
-    </ScrollView>
-
-    <!-- Start button pinned at bottom -->
+    <!-- Start button (no longer pinned to bottom) -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnStartfinal"
         android:layout_width="0dp"
         android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/relax_start"
         android:textAllCaps="false"
-        android:textSize="16sp"
         android:textColor="@color/onPrimary"
-        app:cornerRadius="24dp"
+        android:textSize="16sp"
         app:backgroundTint="@color/primary"
-        app:rippleColor="@color/accentRipple"
-        android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/optionsColumn"
+        app:rippleColor="@color/accentRipple" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

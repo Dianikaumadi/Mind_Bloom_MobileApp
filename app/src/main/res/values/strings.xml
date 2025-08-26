@@ -20,7 +20,7 @@
     <string name="onboard2description">Discover a sanctuary of calm with our guided meditations and mindfulness exercises. Reduce stress, improve focus,
         and cultivate a more peaceful mind.</string>
 
-    <string name="loading">Welcome to Mind Bloom</string>
+    <string name="loading">Welcome to \n Mind Bloom</string>
     <string name="login">LOGIN</string>
     <string name="Sign">SIGN UP</string>
     <string name="google">Continue with google </string>
@@ -276,6 +276,14 @@
 
     <!-- Bottom tip -->
     <string name="discover_bottom_tip">Tip: Try 4–7–8 breathing for instant calm.</string>
+
+
+    <string name="relax_option_relaxation">🧘  Relaxation</string>
+    <string name="relax_option_sleep_better">🌙  Sleep better</string>
+    <string name="relax_option_focus">🎯  Focus</string>
+    <string name="relax_option_reduce_anxiety">🫧  Reduce anxiety</string>
+    <string name="relax_option_reflect_journal">📓  Reflect and journal</string>
+    <string name="relax_option_improve_performance">🔎  Improve performance</string>
 
 
 
