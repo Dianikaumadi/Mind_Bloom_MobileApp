@@ -3,7 +3,9 @@ package com.example.mindbloomapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 
 class Profile : AppCompatActivity() {
 
@@ -26,5 +28,10 @@ class Profile : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.navPremium).setOnClickListener {
             startActivity(Intent(this, PremiumActivity::class.java))
         }
+
+        findViewById<TextView>(R.id.gearEmoji).setOnClickListener {
+            startActivity(Intent(this, Settings::class.java))
+        }
+
     }
 }

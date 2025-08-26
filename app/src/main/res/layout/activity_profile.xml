@@ -38,20 +38,21 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:paddingTop="10dp">
 
             <TextView
                 android:id="@+id/gearEmoji"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/profile_settings_desc"
                 android:text="⚙️"
-                android:textSize="18sp"
-                android:contentDescription="@string/profile_settings_desc"/>
+                android:textSize="18sp" />
 
             <Space
                 android:layout_width="12dp"
-                android:layout_height="1dp"/>
+                android:layout_height="1dp" />
 
             <TextView
                 android:id="@+id/title"
@@ -59,29 +60,24 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/profile_title"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"/>
+                android:textStyle="bold" />
+
         </LinearLayout>
 
-        <!-- avatar -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="116dp"
-            android:layout_height="116dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="58dp"
-            app:cardUseCompatPadding="false"
-            app:cardBackgroundColor="@color/profileChipBg">
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="357dp"
+            android:layout_height="192dp"
+            app:srcCompat="@drawable/avatar" />
 
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/avatar"
-                android:contentDescription="@string/profile_avatar_desc"/>
-        </com.google.android.material.card.MaterialCardView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <!-- avatar -->
 
         <!-- name -->
         <TextView
@@ -122,16 +118,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_streak"
-                        android:textSize="12sp"
-                        android:textColor="@color/profileTextSecondary"/>
+                        android:textColor="@color/mb_text"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_streak_value"
+                        android:textColor="@color/mb_text"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -154,16 +150,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_minutes"
-                        android:textSize="12sp"
-                        android:textColor="@color/profileTextSecondary"/>
+                        android:textColor="@color/mb_text"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_minutes_value"
+                        android:textColor="@color/mb_text"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -186,16 +182,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_sessions"
-                        android:textSize="12sp"
-                        android:textColor="@color/profileTextSecondary"/>
+                        android:textColor="@color/mb_text"
+                        android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_stat_sessions_value"
+                        android:textColor="@color/mb_text"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
@@ -255,31 +251,31 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp">
+            android:layout_height="210dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
             <!-- row 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="10dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/profile_activity_icon_desc"
                     android:text="🧘"
-                    android:textSize="16sp"
-                    android:contentDescription="@string/profile_activity_icon_desc"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -287,38 +283,42 @@
                         android:text="@string/profile_hist_morning"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_hist_morning_dur"
                         android:textColor="@color/profileTextSecondary"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
 
             <!-- row 2 -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="10dp">
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/profile_activity_icon_desc"
                     android:text="🌙"
-                    android:textSize="16sp"
-                    android:contentDescription="@string/profile_activity_icon_desc"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -326,14 +326,18 @@
                         android:text="@string/profile_hist_evening"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_hist_evening_dur"
                         android:textColor="@color/profileTextSecondary"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -341,22 +345,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/profile_activity_icon_desc"
                     android:text="🚶"
-                    android:textSize="16sp"
-                    android:contentDescription="@string/profile_activity_icon_desc"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="319dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginStart="12dp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -364,21 +368,18 @@
                         android:text="@string/profile_hist_walk"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/profile_hist_walk_dur"
                         android:textColor="@color/profileTextSecondary"
-                        android:textSize="12sp"/>
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="8dp"/>
     </LinearLayout>
 
     <!-- fixed bottom nav -->

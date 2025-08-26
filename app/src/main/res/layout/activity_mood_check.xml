@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ss"
@@ -7,61 +8,72 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash">
 
+    <!-- Title -->
     <TextView
         android:id="@+id/titleMood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
+        android:includeFontPadding="false"
         android:text="@string/Mood"
+        android:textColor="@color/textColor"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Subtitles -->
     <TextView
         android:id="@+id/sub1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="@string/Moodtxt1"
-        app:layout_constraintStart_toStartOf="@+id/titleMood"
-        app:layout_constraintTop_toBottomOf="@+id/titleMood" />
+        android:textAlignment="center"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/titleMood"
+        app:layout_constraintTop_toBottomOf="@id/titleMood" />
 
+    <!-- Mood grid (CENTERED) -->
     <TextView
         android:id="@+id/sub2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/Moodtxt2"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@id/sub1"
         app:layout_constraintTop_toBottomOf="@id/sub1" />
 
-    <!-- Mood grid -->
-    <GridLayout
+    <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridMoods"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:columnCount="2"
-        android:rowCount="3"
-        android:useDefaultMargins="false"
+        android:layout_width="223dp"
+        android:layout_height="432dp"
+        android:layout_marginTop="50dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sub2">
+        app:layout_constraintTop_toBottomOf="@id/sub2"
+        app:rowCount="3"
+        app:useDefaultMargins="true">
 
         <!-- Happy -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodHappy"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -70,7 +82,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="😊"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -78,22 +90,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Happy"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <!-- Loved -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodLoved"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -101,7 +113,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="😍"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -109,22 +121,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Loved"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <!-- Sad -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodSad"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -132,7 +144,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="😢"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -140,22 +152,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Sad"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <!-- Angry -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodAngry"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -163,7 +175,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="😡"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -171,22 +183,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Angry"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <!-- Tired -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodTired"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -194,7 +206,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="🥱"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -202,22 +214,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Tired"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <!-- Stressed -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/moodStressed"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:background="@drawable/moodcard">
 
                 <TextView
@@ -225,7 +237,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="😖"
-                    android:textSize="32sp" />
+                    android:textSize="42sp" />
             </FrameLayout>
 
             <TextView
@@ -233,22 +245,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Stressed"
-                android:textColor="#E6FFFFFF"
-                android:textSize="13sp" />
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="14sp" />
         </LinearLayout>
 
-    </GridLayout>
+    </androidx.gridlayout.widget.GridLayout>
 
-    <Button
-        android:id="@+id/sss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="161dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridMoods" />
 </androidx.constraintlayout.widget.ConstraintLayout>

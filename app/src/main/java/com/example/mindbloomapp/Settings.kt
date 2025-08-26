@@ -5,18 +5,23 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
 
 class Settings : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings) // uses your settings XML
+        setContentView(R.layout.activity_settings)
 
-        // Toolbar back
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // Rows -> navigate
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+
+            startActivity(Intent(this, Profile::class.java))
+
+        }
+
+
         findViewById<MaterialCardView>(R.id.rowEditProfile).setOnClickListener {
             startActivity(Intent(this, EditProfile::class.java))
         }
@@ -24,7 +29,14 @@ class Settings : AppCompatActivity() {
             startActivity(Intent(this, Plan::class.java))
         }
 
-        // Bottom nav
+
+        findViewById<MaterialButton>(R.id.btnLogout).setOnClickListener {
+            startActivity(Intent(this, Landing::class.java))
+        }
+
+
+
+
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }

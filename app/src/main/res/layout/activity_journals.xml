@@ -54,52 +54,50 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/homeimg_sea"
+                    android:src="@drawable/journal"
                     android:contentDescription="@string/journal_hero_desc"/>
-
-                <TextView
-                    android:id="@+id/heroOverlay"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="8dp"
-                    android:text="@string/journal_overlay"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:shadowColor="#99000000"
-                    android:shadowRadius="6"/>
             </FrameLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Note input (responsive; fills remaining space) -->
+        <!-- Note input (taller height, rounded, aligned) -->
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="385dp"
-            android:layout_height="202dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_weight="1"
             app:cardBackgroundColor="@color/card"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="0dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/discoverDivider"
+            app:strokeWidth="1dp">
 
-            <EditText
-                android:id="@+id/etNote"
-                android:layout_width="380dp"
-                android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:gravity="top|start"
-                android:hint="@string/journal_hint"
-                android:inputType="textMultiLine"
-                android:maxLines="6"
-                android:overScrollMode="never"
-                android:padding="12dp"
-                android:textColor="@android:color/black"
-                android:textColorHint="@color/textSecondary" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/etNote"
+                    android:layout_width="344dp"
+                    android:layout_height="163dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|start"
+                    android:hint="@string/journal_hint"
+                    android:inputType="textMultiLine"
+                    android:maxLines="8"
+                    android:minLines="6"
+                    android:overScrollMode="never"
+                    android:textColor="@color/textPrimary"
+                    android:textColorHint="@color/textSecondary" />
+            </FrameLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Feel buttons (48dp min to satisfy a11y) -->
-        <LinearLayout
+        <!-- Feel buttons -->
+        <Space
             android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="start"
@@ -110,41 +108,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/accent_chip_bg"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/journal_chip_tired"
                 android:textAllCaps="false"
                 android:textColor="@color/chip_text"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                app:cornerRadius="24dp"
-                android:backgroundTint="@color/accent_chip_bg"/>
+                app:cornerRadius="24dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnGrateful"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/accent_chip_bg"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/journal_chip_grateful"
                 android:textAllCaps="false"
                 android:textColor="@color/chip_text"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                app:cornerRadius="24dp"
-                android:backgroundTint="@color/accent_chip_bg"/>
+                app:cornerRadius="24dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCalm"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
+                android:backgroundTint="@color/accent_chip_bg"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:text="@string/journal_chip_calm"
                 android:textAllCaps="false"
                 android:textColor="@color/chip_text"
-                android:insetTop="0dp"
-                android:insetBottom="0dp"
-                app:cornerRadius="24dp"
-                android:backgroundTint="@color/accent_chip_bg"/>
+                app:cornerRadius="24dp" />
         </LinearLayout>
 
         <!-- Row: Voice journal / Lock Entry -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -211,13 +213,19 @@
         </LinearLayout>
 
         <!-- Streak footer -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="52dp" />
+
         <TextView
             android:id="@+id/streak"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="@string/journal_streak"
-            android:textColor="@color/text_secondary"/>
+            android:textAlignment="center"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

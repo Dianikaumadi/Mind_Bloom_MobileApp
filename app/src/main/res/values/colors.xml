@@ -123,6 +123,9 @@
     <color name="discoverChipBg">#33FFFFFF</color>    <!-- soft chip bg -->
     <color name="discoverQuoteBg">#1A000000</color>   <!-- subtle quote card -->
 
+    <color name="paymentHint">#80FFFFFF</color> <!-- subtle hint white -->
+
+
 
 
 

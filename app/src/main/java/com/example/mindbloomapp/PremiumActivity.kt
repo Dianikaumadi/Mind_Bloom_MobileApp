@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 
 class PremiumActivity : AppCompatActivity() {
 
@@ -12,10 +13,14 @@ class PremiumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_premium) // uses your premium XML
 
-        // Toolbar back
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // Bottom nav
+        findViewById<MaterialButton>(R.id.btnUpgrade).setOnClickListener {
+            startActivity(Intent(this, Plan::class.java))
+        }
+
+
+
+
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }

@@ -12,14 +12,14 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        app:title="@string/payment_title"
-        app:titleCentered="true"
-        app:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:navigationIconTint="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:title="@string/payment_title"
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/white" />
 
     <!-- Scrollable content (keeps bottom nav fixed) -->
     <androidx.core.widget.NestedScrollView
@@ -185,7 +185,7 @@
                     android:inputType="number"
                     android:maxLength="19"
                     android:textColor="@android:color/white"
-                    android:textColorHint="@color/paymentTextDim"/>
+                    android:textColorHint="@color/paymentHint" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Expiry + CVV -->
@@ -214,8 +214,7 @@
                         android:hint="@string/payment_expiry_hint"
                         android:inputType="text"
                         android:maxLength="5"
-                        android:textColor="@android:color/white"
-                        android:textColorHint="@color/paymentTextDim"/>
+                        android:textColorHint="@color/paymentHint"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Space
@@ -241,7 +240,7 @@
                         android:inputType="numberPassword"
                         android:maxLength="4"
                         android:textColor="@android:color/white"
-                        android:textColorHint="@color/paymentTextDim"/>
+                        android:textColorHint="@color/paymentHint"/>
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 

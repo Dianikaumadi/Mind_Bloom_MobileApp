@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 
 class EditProfile : AppCompatActivity() {
 
@@ -12,10 +13,17 @@ class EditProfile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_profile) // uses your edit-profile XML
 
-        // Top bar back -> just go back
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // Bottom nav: only navigation
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            startActivity(Intent(this, Settings::class.java))
+        }
+
+        findViewById<MaterialButton>(R.id.btnSave).setOnClickListener{
+            startActivity(Intent(this, Settings::class.java))
+        }
+
+
+
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }

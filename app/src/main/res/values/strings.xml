@@ -30,6 +30,8 @@
     <string name="Moodtxt1"> Ready to Relax and Recharge?</string>
     <string name="Moodtxt2"> How do you feel right now?</string>
 
+    <string name="landing"> Calm Your Mind, Let It Bloom</string>
+
 
     <string name="relax_lead_text">What brings you to</string>
     <string name="relax_highlight_text">Relax?</string>

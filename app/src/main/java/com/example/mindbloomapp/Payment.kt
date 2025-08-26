@@ -5,17 +5,27 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 
 class Payment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_payment) // uses your payment XML
+        setContentView(R.layout.activity_payment)
 
-        // Toolbar back
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // Bottom nav (only navigation)
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            startActivity(Intent(this, Plan::class.java))
+
+        }
+
+        findViewById<MaterialButton>(R.id.btnPurchase).setOnClickListener {
+            startActivity(Intent(this, PaymentSuccess::class.java))
+        }
+
+
+
+
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }

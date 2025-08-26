@@ -13,7 +13,10 @@ class SoothingArt : AppCompatActivity() {
         setContentView(R.layout.activity_soothing_art) // uses your soothing art XML
 
         // Back (up) navigation
-        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            startActivity(Intent(this, Discover::class.java))
+
+        }
 
         // "Get Started" -> go to Coloring
         findViewById<MaterialButton>(R.id.btnGetStarted).setOnClickListener {

@@ -1,6 +1,8 @@
 package com.example.mindbloomapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
 
@@ -12,5 +14,10 @@ class Journals : AppCompatActivity() {
 
         // Only navigation: toolbar back
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
+
+        findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
+            startActivity(Intent(this, Discover::class.java))
+        }
+
     }
 }

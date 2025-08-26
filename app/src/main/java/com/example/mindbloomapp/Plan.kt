@@ -16,7 +16,8 @@ class Plan : AppCompatActivity() {
         // Toolbar back
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // Plan buttons
+
+
         findViewById<MaterialButton>(R.id.btnFree)?.setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }
@@ -27,7 +28,8 @@ class Plan : AppCompatActivity() {
             startActivity(Intent(this, Payment::class.java))
         }
 
-        // Bottom nav
+
+
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }

@@ -81,7 +81,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher"
+                            android:src="@drawable/calming"
                             android:contentDescription="@string/calming_art"/>
 
                         <TextView
@@ -119,7 +119,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher"
+                            android:src="@drawable/healing"
                             android:contentDescription="@string/peaceful_art"/>
 
                         <TextView
@@ -157,7 +157,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher"
+                            android:src="@drawable/soothing"
                             android:contentDescription="@string/healing_art"/>
 
                         <TextView
@@ -195,7 +195,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
-                            android:src="@mipmap/ic_launcher"
+                            android:src="@drawable/wellness"
                             android:contentDescription="@string/wellness_art"/>
 
                         <TextView
@@ -257,7 +257,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@drawable/color1"/>
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
@@ -273,7 +273,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:src="@drawable/color2"/>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 

@@ -13,10 +13,10 @@ class PaymentSuccess : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_success) // uses your success XML
 
-        // Toolbar back
+
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
-        // CTA -> go to Home
+
         findViewById<MaterialButton>(R.id.btnExplore).setOnClickListener {
             startActivity(Intent(this, Home::class.java))
         }
