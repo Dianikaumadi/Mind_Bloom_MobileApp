@@ -111,6 +111,19 @@
     <color name="successIcon">#1BCB79</color>
     <color name="successIconDark">#11A864</color>
 
+    <color name="discoverButton">#335EA8</color>
+    <color name="discoverCard">#345DA7</color>
+    <color name="discoverDivider">#80FFFFFF</color>
+
+    <!-- Text on dark/overlay surfaces -->
+    <color name="onDark">#FFFFFFFF</color>
+
+
+    <color name="discoverSearchBg">#33000000</color>  <!-- translucent search pill -->
+    <color name="discoverChipBg">#33FFFFFF</color>    <!-- soft chip bg -->
+    <color name="discoverQuoteBg">#1A000000</color>   <!-- subtle quote card -->
+
+
 
 
 

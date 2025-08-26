@@ -110,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/coloring"
             android:contentDescription="@string/coloring"/>
     </com.google.android.material.card.MaterialCardView>
 
@@ -123,85 +123,93 @@
         app:layout_constraintTop_toBottomOf="@id/canvasCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/paletteGrid"/>
+        app:layout_constraintBottom_toTopOf="@+id/paletteWrapper"/>
 
-    <!-- Palette: 4 x 2 circular swatches -->
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/paletteGrid"
+    <!-- ===== Centered Palette ===== -->
+    <LinearLayout
+        android:id="@+id/paletteWrapper"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:columnCount="4"
-        app:rowCount="2"
-        app:useDefaultMargins="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <!-- Each swatch now has contentDescription for a11y -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch1"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#F3C9A6"
-            android:contentDescription="@string/color_peach"/>
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/paletteGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:columnCount="4"
+            app:rowCount="2">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch2"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#F6D35F"
-            android:contentDescription="@string/color_yellow"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#F3C9A6"
+                android:contentDescription="@string/color_peach"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch3"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#E85B97"
-            android:contentDescription="@string/color_pink"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#F6D35F"
+                android:contentDescription="@string/color_yellow"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch4"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#6DCB8D"
-            android:contentDescription="@string/color_green"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#E85B97"
+                android:contentDescription="@string/color_pink"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch5"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#4B3621"
-            android:contentDescription="@string/color_brown"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#6DCB8D"
+                android:contentDescription="@string/color_green"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch6"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#F1A62A"
-            android:contentDescription="@string/color_orange"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#4B3621"
+                android:contentDescription="@string/color_brown"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch7"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#34C1E0"
-            android:contentDescription="@string/color_blue"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#F1A62A"
+                android:contentDescription="@string/color_orange"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/swatch8"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            app:cornerRadius="32dp"
-            app:backgroundTint="#B564E3"
-            android:contentDescription="@string/color_purple"/>
-    </androidx.gridlayout.widget.GridLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#34C1E0"
+                android:contentDescription="@string/color_blue"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swatch8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cornerRadius="32dp"
+                app:backgroundTint="#B564E3"
+                android:contentDescription="@string/color_purple"/>
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+    <!-- ===== End Centered Palette ===== -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

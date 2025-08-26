@@ -243,6 +243,37 @@
     <string name="max_volume">Max volume</string>
     <string name="muted">Muted</string>
     <string name="volume_fmt">Volume %1$d%%</string>
+    <string name="journals">Journals</string>
+    <string name="yoga_and_nstretching">Yoga and\nStretching</string>
+
+    <string name="discover_title">Discover</string>
+    <string name="discover_greeting">Good day, take a deep breath 🌿</string>
+    <string name="discover_search_hint">Title,narrator,artist,topic</string>
+
+    <!-- Chips -->
+    <string name="chip_sleep">Sleep</string>
+    <string name="chip_focus">Focus</string>
+    <string name="chip_relax">Relax</string>
+    <string name="chip_anxiety">Anxiety Relief</string>
+
+    <!-- Quote + headings -->
+    <string name="discover_quote">“Inhale calm, exhale tension.”</string>
+    <string name="discover_mood_title">Mood Selector  🙂</string>
+    <string name="discover_browse_goal">Browse by Goal  🔒</string>
+    <string name="discover_see_all">See All</string>
+
+    <!-- Buttons -->
+    <string name="btn_breathing">Breathing\nExercises</string>
+    <string name="btn_journals">Journals</string>
+    <string name="btn_yoga">Yoga and\nStretching</string>
+    <string name="btn_arts">Soothing\nArts</string>
+
+    <!-- Cards -->
+    <string name="card_reduce_stress">Reduce\nStress and Anxiety</string>
+    <string name="card_daily_habit">Build a\nDaily Habit</string>
+
+    <!-- Bottom tip -->
+    <string name="discover_bottom_tip">Tip: Try 4–7–8 breathing for instant calm.</string>
 
 
 

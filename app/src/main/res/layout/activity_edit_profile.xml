@@ -8,13 +8,16 @@
     android:background="@drawable/bg_splash">
 
     <!-- Top bar -->
+
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:navigationIconTint="@android:color/white"
         app:title="@string/edit_profile"
@@ -40,14 +43,14 @@
             <!-- Profile picture -->
             <ImageView
                 android:id="@+id/imgProfile"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher"
-                android:scaleType="centerCrop"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/avatar"
                 android:contentDescription="@string/edit_profile"
-                android:background="@drawable/avatar"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
 
             <TextView
                 android:id="@+id/txtUserName"
@@ -105,16 +108,20 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Save button -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/save"
-                app:cornerRadius="16dp"
-                app:backgroundTint="?attr/colorPrimary"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                app:backgroundTint="?attr/colorPrimary"
+                app:cornerRadius="16dp" />
         </LinearLayout>
     </ScrollView>
 
