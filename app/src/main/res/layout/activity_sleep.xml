@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_splash">
 
-    <!-- VERTICAL SCROLL: whole page -->
+
     <ScrollView
         android:id="@+id/scrollContent"
         android:layout_width="0dp"
@@ -26,7 +26,7 @@
             android:paddingTop="24dp"
             android:paddingBottom="24dp">
 
-            <!-- Title -->
+
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:paddingBottom="12dp" />
 
-            <!-- ===================== MUSIC ===================== -->
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                     android:orientation="vertical"
                     android:padding="12dp">
 
-                    <!-- right-aligned chip -->
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -68,12 +68,12 @@
                             android:paddingStart="16dp"
                             android:paddingEnd="16dp"
                             android:text="Music"
-                            android:textColor="@color/chip_text"
+                            android:textColor="@color/bg_top"
                             android:textSize="14sp"
                             android:fontFamily="sans-serif-medium" />
                     </LinearLayout>
 
-                    <!-- horizontal scroller: 4 cards -->
+
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <!-- Card 1 -->
+
                             <LinearLayout
                                 android:layout_width="260dp"
                                 android:layout_height="180dp"
@@ -143,7 +143,7 @@
                                     android:textSize="12sp" />
                             </LinearLayout>
 
-                            <!-- Card 2 -->
+
                             <LinearLayout
                                 android:layout_width="260dp"
                                 android:layout_height="180dp"
@@ -199,7 +199,7 @@
                                     android:textSize="12sp" />
                             </LinearLayout>
 
-                            <!-- Card 3 -->
+
                             <LinearLayout
                                 android:layout_width="260dp"
                                 android:layout_height="180dp"
@@ -255,7 +255,7 @@
                                     android:textSize="12sp" />
                             </LinearLayout>
 
-                            <!-- Card 4 -->
+
                             <LinearLayout
                                 android:layout_width="260dp"
                                 android:layout_height="180dp"
@@ -310,7 +310,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- ===================== SOUNDSCAPE ===================== -->
+            <!-- SOUNDSCAPE  -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -338,7 +338,7 @@
                             android:paddingStart="16dp"
                             android:paddingEnd="16dp"
                             android:text="Soundscape"
-                            android:textColor="@color/chip_text"
+                            android:textColor="@color/bg_top"
                             android:textSize="14sp"
                             android:fontFamily="sans-serif-medium" />
                     </LinearLayout>
@@ -490,7 +490,7 @@
                             android:paddingStart="16dp"
                             android:paddingEnd="16dp"
                             android:text="Nature"
-                            android:textColor="@color/chip_text"
+                            android:textColor="@color/bg_top"
                             android:textSize="14sp"
                             android:fontFamily="sans-serif-medium" />
                     </LinearLayout>
@@ -623,7 +623,7 @@
                             android:paddingStart="16dp"
                             android:paddingEnd="16dp"
                             android:text="Stories"
-                            android:textColor="@color/chip_text"
+                            android:textColor="@color/bg_top"
                             android:textSize="14sp"
                             android:fontFamily="sans-serif-medium" />
                     </LinearLayout>

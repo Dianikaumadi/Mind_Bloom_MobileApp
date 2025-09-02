@@ -11,7 +11,7 @@ class PaymentSuccess : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_payment_success) // uses your success XML
+        setContentView(R.layout.activity_payment_success)
 
 
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }

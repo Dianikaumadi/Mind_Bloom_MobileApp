@@ -11,7 +11,7 @@ class PremiumActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_premium) // uses your premium XML
+        setContentView(R.layout.activity_premium)
 
 
         findViewById<MaterialButton>(R.id.btnUpgrade).setOnClickListener {

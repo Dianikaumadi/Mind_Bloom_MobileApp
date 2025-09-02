@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Full‑bleed background (use yours; swap if you prefer discover_bg) -->
+    <!-- Full-bleed background -->
     <ImageView
         android:id="@+id/bgImage"
         android:layout_width="0dp"
@@ -32,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Scrollable content (padded so last card doesn't hide behind nav) -->
+    <!-- Scrollable content -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scroll"
         android:layout_width="0dp"
@@ -105,14 +105,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_daily_quotes"
+                            android:text="@string/plan_daily_quotes"
                             android:textColor="@color/planText"
                             android:lineSpacingExtra="2dp"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_basic_meditations"
+                            android:text="@string/plan_basic_meditations"
                             android:textColor="@color/planText"
                             android:layout_marginTop="6dp"
                             android:lineSpacingExtra="2dp"/>
@@ -213,14 +213,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_full_meditations"
+                            android:text="@string/plan_full_meditations"
                             android:textColor="@color/planText"
                             android:lineSpacingExtra="2dp"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_custom_soundscapes"
+                            android:text="@string/plan_custom_soundscapes"
                             android:textColor="@color/planText"
                             android:layout_marginTop="6dp"
                             android:lineSpacingExtra="2dp"/>
@@ -320,14 +320,14 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_personalized_journeys"
+                            android:text="@string/plan_personalized_journeys"
                             android:textColor="@color/planText"
                             android:lineSpacingExtra="2dp"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="✓  @string/plan_offline_mode"
+                            android:text="@string/plan_offline_mode"
                             android:textColor="@color/planText"
                             android:layout_marginTop="6dp"
                             android:lineSpacingExtra="2dp"/>

@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
             videoView.start()
         }
 
-        // After the video completes, wait 2s and go to Onboard1
+
         videoView.setOnCompletionListener {
             Handler(Looper.getMainLooper()).postDelayed({
                 startActivity(Intent(this, onboard_1::class.java))

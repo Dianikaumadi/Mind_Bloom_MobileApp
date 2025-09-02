@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Background Image -->
+
         <ImageView
             android:id="@+id/bgImage"
             android:layout_width="match_parent"
@@ -49,8 +49,8 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/onboard1description"
                 android:textAlignment="center"
-                android:textColor="@color/secondaryBtn"
-                android:textSize="18sp"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.673"
                 app:layout_constraintStart_toStartOf="parent"

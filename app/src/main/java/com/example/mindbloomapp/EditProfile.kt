@@ -11,7 +11,7 @@ class EditProfile : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_profile) // uses your edit-profile XML
+        setContentView(R.layout.activity_edit_profile)
 
 
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {

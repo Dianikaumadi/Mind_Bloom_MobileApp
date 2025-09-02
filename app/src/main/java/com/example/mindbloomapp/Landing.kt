@@ -23,7 +23,7 @@ class Landing : AppCompatActivity() {
 
         val btnlog = findViewById<Button>(R.id.btnlogin_land)
         btnlog.setOnClickListener {
-            // Navigate to Onboard2 (replace with your actual target activity)
+
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
             finish()
@@ -31,7 +31,7 @@ class Landing : AppCompatActivity() {
 
         val btnsign = findViewById<Button>(R.id.butsign_land)
         btnsign.setOnClickListener {
-            // Navigate to Onboard2 (replace with your actual target activity)
+
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
             finish()

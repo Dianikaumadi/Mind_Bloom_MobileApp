@@ -21,7 +21,7 @@ class StartPage : AppCompatActivity() {
 
         val btnNextstart = findViewById<Button>(R.id.btnstart)
         btnNextstart.setOnClickListener {
-            // Navigate to Onboard2 (replace with your actual target activity)
+
             val intent = Intent(this, Landing::class.java)
             startActivity(intent)
             finish()

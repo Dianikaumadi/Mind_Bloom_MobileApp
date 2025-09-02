@@ -9,7 +9,7 @@ class Sleep : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sleep) // uses your sleep.xml
+        setContentView(R.layout.activity_sleep)
 
         findViewById<LinearLayout>(R.id.navHome).setOnClickListener {
             startActivity(Intent(this, Home::class.java))

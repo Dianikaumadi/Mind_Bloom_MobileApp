@@ -10,11 +10,9 @@
     <string name="move">NEXT</string>
     <string name="start">Begin Your Journey</string>
 
-
     <string name="onboard1">Your Path to Peace,\n Tailored for You</string>
     <string name="onboard1description">Discover a meditation practice as unique as you are. Our app adapts to your needs,
             offering personalized programs for individual growth.</string>
-
 
     <string name="onboard2">Find your inner peace</string>
     <string name="onboard2description">Discover a sanctuary of calm with our guided meditations and mindfulness exercises. Reduce stress, improve focus,
@@ -31,7 +29,6 @@
     <string name="Moodtxt2"> How do you feel right now?</string>
 
     <string name="landing"> Calm Your Mind, Let It Bloom</string>
-
 
     <string name="relax_lead_text">What brings you to</string>
     <string name="relax_highlight_text">Relax?</string>
@@ -239,7 +236,6 @@
     <string name="theme_2">Theme 2</string>
     <string name="theme_3">Theme 3</string>
 
-    <!-- Reuse if already present from earlier page -->
     <string name="see_all">See All</string>
     <string name="mute">Mute</string>
     <string name="max_volume">Max volume</string>
@@ -284,7 +280,5 @@
     <string name="relax_option_reduce_anxiety">🫧  Reduce anxiety</string>
     <string name="relax_option_reflect_journal">📓  Reflect and journal</string>
     <string name="relax_option_improve_performance">🔎  Improve performance</string>
-
-
 
 </resources>

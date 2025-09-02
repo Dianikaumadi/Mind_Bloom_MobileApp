@@ -11,7 +11,7 @@ class MoodCheck : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mood_check) // <-- uses the XML above
+        setContentView(R.layout.activity_mood_check)
 
         setClick(R.id.moodHappy,    "Happy")
         setClick(R.id.moodLoved,    "Loved")

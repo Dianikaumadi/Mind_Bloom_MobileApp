@@ -8,9 +8,9 @@ class coloring : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_coloring) // uses your coloring XML
+        setContentView(R.layout.activity_coloring)
 
-        // Only navigation: toolbar back
+
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
     }
 }

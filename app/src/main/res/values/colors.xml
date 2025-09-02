@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="mb_primary">#A78BFA</color>      <!-- lavender -->
-    <color name="mb_secondary">#F8C8DC</color>    <!-- soft pink -->
-    <color name="mb_accent">#9BD4F5</color>       <!-- soft blue -->
+    <color name="mb_primary">#A78BFA</color>
+    <color name="mb_secondary">#F8C8DC</color>
+    <color name="mb_accent">#9BD4F5</color>
     <color name="mb_bg">#F8F6FF</color>
     <color name="mb_text">#2D1B4E</color>
     <color name="mb_text_muted">#6B6B8E</color>
@@ -11,11 +11,9 @@
     <color name="colorPrimaryDark">#8A7AC7</color>
     <color name="bg">#F5F2FF</color>
 
-    <!-- 30% Secondary (soft blue) -->
     <color name="colorSecondary">#6FB1F1</color>
     <color name="secondaryLight">#BEE1FF</color>
 
-    <!-- 10% Accent (soft pink) -->
     <color name="accent">#F7A8B8</color>
 
     <color name="textPrimary">#1E1E1E</color>
@@ -23,83 +21,68 @@
     <color name="card">#FFFFFF</color>
     <color name="divider">#E8E8F3</color>
 
-    <color name="bg_top">#D9B8FF</color>    <!-- Lavender -->
-    <color name="bg_bottom">#002B50</color> <!-- Deep Navy Blue -->
+    <color name="bg_top">#D9B8FF</color>
+    <color name="bg_bottom">#002B50</color>
 
-
-    <color name="primaryBg">#C8D2FF</color>       <!-- soft lavender-blue -->
+    <color name="primaryBg">#C8D2FF</color>
     <color name="onPrimaryBg">#FFFFFF</color>
 
-    <color name="primary">#6E8EF5</color>        <!-- strong blue -->
+    <color name="primary">#6E8EF5</color>
     <color name="onPrimary">#FFFFFF</color>
 
-    <!-- Secondary 30% (option buttons) -->
     <color name="secondary">#5C79E6</color>
     <color name="onSecondary">#FFFFFF</color>
 
-    <!-- Accent 10% (highlights/ripple) -->
-
-    <color name="accentRipple">#33FFD93D</color> <!-- 20% alpha -->
+    <color name="accentRipple">#33FFD93D</color>
 
     <color name="card_top">#3A546E</color>
     <color name="card_bottom">#223A55</color>
 
-    <!-- 60-30-10 palette -->
-    <!-- 60%: background gradient -->
     <color name="primary_bg_top">#8FB3D9</color>
     <color name="primary_bg_bottom">#0E2744</color>
 
-    <!-- 10%: accents / chips -->
-    <color name="accent_chip_bg">#E6FFFFFF</color>  <!-- translucent white -->
+    <color name="accent_chip_bg">#E6FFFFFF</color>
     <color name="chip_text">#2B3A4D</color>
 
-    <!-- Text helpers -->
-    <color name="text_secondary">#B3FFFFFF</color>  <!-- 70% white -->
+    <color name="text_secondary">#B3FFFFFF</color>
 
-    <!-- Bottom nav -->
     <color name="nav_active">#FFFFFFFF</color>
     <color name="nav_inactive">#B3FFFFFF</color>
 
-    <!-- Subtle accent and button colors for the Premium page -->
     <color name="premiumAccent">#A8B4FF</color>
     <color name="premiumText">#E6FFFFFF</color>
     <color name="premiumButtonBg">#F1E6FF</color>
     <color name="premiumButtonText">#1D1B33</color>
 
-    <color name="planCardBg">#1D2A47</color>         <!-- deep slate blue -->
-    <color name="planText">#E6FFFFFF</color>        <!-- 90% white -->
-    <color name="planButtonBg">#324768</color>      <!-- pill bg -->
-    <color name="planButtonText">#E6FFFFFF</color>  <!-- pill text -->
-    <color name="planBadgeBg">#B3FFFFFF</color>     <!-- badge bg (70% white) -->
-    <color name="planBadgeText">#1D1B33</color>     <!-- badge text -->
+    <color name="planCardBg">#1D2A47</color>
+    <color name="planText">#E6FFFFFF</color>
+    <color name="planButtonBg">#324768</color>
+    <color name="planButtonText">#E6FFFFFF</color>
+    <color name="planBadgeBg">#B3FFFFFF</color>
+    <color name="planBadgeText">#1D1B33</color>
 
-    <!-- Text Colors -->
-    <color name="textColor">#FFFFFF</color> <!-- white -->
-    <color name="secondaryTextColor">#B3FFFFFF</color> <!-- light grey -->
+    <color name="textColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#B3FFFFFF</color>
 
-    <!-- Background and UI Colors -->
-    <color name="backgroundColor">#1D2A47</color> <!-- deep slate blue -->
-    <color name="accentColor">#A8B4FF</color> <!-- accent color -->
-    <color name="primaryColor">#335EA8</color> <!-- main button color -->
-    <color name="secondaryBtn">#1A3E6F</color> <!-- button background -->
+    <color name="backgroundColor">#1D2A47</color>
+    <color name="accentColor">#A8B4FF</color>
+    <color name="primaryColor">#335EA8</color>
+    <color name="secondaryBtn">#1A3E6F</color>
 
-    <!-- Profile-specific, minimal -->
-    <color name="profileChipBg">#F2F4F8</color>          <!-- light pill/card bg -->
-    <color name="profileTextSecondary">#E6FFFFFF</color> <!-- 90% white -->
-    <color name="profileDivider">#33FFFFFF</color>       <!-- thin divider -->
-    <color name="profileProgress">#6E7BEA</color>        <!-- progress bar -->
-    <color name="profileProgressTrack">#66FFFFFF</color> <!-- track tint -->
+    <color name="profileChipBg">#F2F4F8</color>
+    <color name="profileTextSecondary">#E6FFFFFF</color>
+    <color name="profileDivider">#33FFFFFF</color>
+    <color name="profileProgress">#6E7BEA</color>
+    <color name="profileProgressTrack">#66FFFFFF</color>
 
-    <!-- Breathing page colors (minimal) -->
     <color name="breathePrimary">#6E7BEA</color>
     <color name="breatheOnPrimary">#FFFFFFFF</color>
-    <color name="breatheButtonTonal">#E6ECFF</color>   <!-- light tint -->
+    <color name="breatheButtonTonal">#E6ECFF</color>
     <color name="breatheChipBg">#F0F2FF</color>
     <color name="breatheChipText">#1D1B33</color>
     <color name="breatheTextSecondary">#E6FFFFFF</color>
     <color name="breatheDivider">#33FFFFFF</color>
 
-    <!-- Payment screen palette -->
     <color name="paymentCardBg">#243B74</color>
     <color name="paymentTileBg">#1C2D55</color>
     <color name="paymentFieldBg">#23406B</color>
@@ -115,21 +98,12 @@
     <color name="discoverCard">#345DA7</color>
     <color name="discoverDivider">#80FFFFFF</color>
 
-    <!-- Text on dark/overlay surfaces -->
     <color name="onDark">#FFFFFFFF</color>
 
+    <color name="discoverSearchBg">#33000000</color>
+    <color name="discoverChipBg">#33FFFFFF</color>
+    <color name="discoverQuoteBg">#1A000000</color>
 
-    <color name="discoverSearchBg">#33000000</color>  <!-- translucent search pill -->
-    <color name="discoverChipBg">#33FFFFFF</color>    <!-- soft chip bg -->
-    <color name="discoverQuoteBg">#1A000000</color>   <!-- subtle quote card -->
-
-    <color name="paymentHint">#80FFFFFF</color> <!-- subtle hint white -->
-
-
-
-
-
-
-
+    <color name="paymentHint">#80FFFFFF</color>
 
 </resources>

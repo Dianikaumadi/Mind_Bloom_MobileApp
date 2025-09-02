@@ -11,9 +11,9 @@ class Plan : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_plan) // uses your plan XML
+        setContentView(R.layout.activity_plan)
 
-        // Toolbar back
+
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
 

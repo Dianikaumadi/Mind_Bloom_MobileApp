@@ -23,7 +23,7 @@ class Login : AppCompatActivity() {
 
         val btnlogging = findViewById<Button>(R.id.btnsignup)
         btnlogging.setOnClickListener {
-            // Navigate to Onboard2 (replace with your actual target activity)
+
             val intent = Intent(this, MoodCheck::class.java)
             startActivity(intent)
             finish()

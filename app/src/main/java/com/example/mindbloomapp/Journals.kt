@@ -10,9 +10,9 @@ class Journals : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_journals) // uses your journals XML
+        setContentView(R.layout.activity_journals)
 
-        // Only navigation: toolbar back
+
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
 
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {

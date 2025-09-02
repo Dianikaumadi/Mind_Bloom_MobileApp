@@ -9,10 +9,9 @@ class BreathingExercises : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_breathing_exercises) // uses your breathing XML
+        setContentView(R.layout.activity_breathing_exercises)
 
-        // Only navigation: toolbar back
-        //findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener { finish() }
+
 
         findViewById<MaterialToolbar>(R.id.toolbar).setNavigationOnClickListener {
             startActivity(Intent(this, Discover::class.java))
